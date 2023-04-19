@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        #register{
+            position: absolute;
+            top:0;
+            bottom:0;
+            left: 0;
+            right:0;
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #e9e9e9;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #register_submit{
+            margin: 10px 0;
+            margin-top:20px;
+            display: inline-block;
+            background: #00e898;
+            box-shadow: 0 0 5px 0 rgba(0, 232, 152, 0.45);
+            color: #ffffff;
+            font-weight: 300;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            letter-spacing: 2px;
+            cursor: pointer;
+            width: 400px;
+            height: 40px;
+            border-radius: 10px;
+            transition: 0.5s all;
+            -webkit-transition: 0.5s all;
+            -o-transition: 0.5s all;
+            -moz-transition: 0.5s all;
+        }
+        #user,#password{
+            width:380px;
+            height: 30px;
+            font-size: 14px;
+            border-bottom:#666666 1px solid;
+            border-left-width:0;
+            border-right-width:0;
+            border-top-width:0;
+            box-shadow: 0 1px 0 0 #e5e4e1;
+            margin-top: 5px;
+        }
+        #user::placeholder,#password::placeholder{
+            color: #7b7a79;
+        }
+        #user:focus,#password:focus{
+            border-bottom:#3563ff 1px solid;
+        }
+        h1{
+            text-align: center;
+            font-size:30px;
+            margin-top: 50px;
+            letter-spacing: 2px;
+        }
+        #register_error{
+            font-size: 12px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="register">
+        <div align="center">
+            <h1> 注册 </h1>
+        </div>
+        <br />
+        <form action="2" method="post">
+            <div align="center"><input id="user" type="text" name="user" placeholder="用户名" required="required"></div><br />
+            <div align="center"><input id="password" type="password" name="password" placeholder="密码" required="required"></div>
+            <br />
+            <div align="center"><button id="register_submit" type="submit">注册</button></div>
+        </form>
+        <div id="register_error"align="center">该用户名已被注册！</div>
+    </div>
+</body>
+
+</html>
